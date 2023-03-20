@@ -1,3 +1,15 @@
+@import url('../font/FiraSans/import.css');
+
+:root {
+    --background-1: #ffffff;
+    --foreground-1: #000000;
+    
+    --brown-1: #996655;
+    --brown-2: #b79388;
+    --brown-3: #e2d3cf;
+    --brown-4: #cc7a5b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,8 +44,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    background: #996655;
-    color: #b79388;
+    background: var(--brown-1);
+    color: var(--brown-2);
 }
 
 footer > .icons {
@@ -44,13 +56,33 @@ footer > .icons {
 }
 
 footer > .icons a {
-    color: #b79388;
+    color: var(--brown-2);
 }
 
 footer > .icons a:hover {
-    color: #e2d3cf;
+    color: var(--brown-3);
 }
 
-.brown {
-    color: #996655; /* old: #cc7a5b */
+.brown, .brown-1 {
+    color: var(--brown-1);
+}
+
+.brown-2 {
+    color: var(--brown-2);
+}
+
+.brown-3 {
+    color: var(--brown-3);
+}
+
+.bg-brown, .bg-brown-1 {
+    background-color: var(--brown-1);
+}
+
+.bg-brown-2 {
+    background-color: var(--brown-2);
+}
+
+.bg-brown-3 {
+    background-color: var(--brown-3);
 }
