@@ -21,6 +21,13 @@ body {
     scroll-behavior: smooth;
 }
 
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     height: 100vh;
     width: 100%;
@@ -40,27 +47,33 @@ header > div > h1 {
 footer {
     width: 100%;
     height: 2rem;
+}
+
+footer > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    background: var(--brown-1);
+    padding-bottom: 0;
+    max-width: 75%;
+    margin: auto auto;
+    border-top: 1px solid var(--brown-2);
     color: var(--brown-2);
 }
 
-footer > .icons {
+footer > .container > .icons {
     display: flex;
     align-items: center;
     height: 100%;
     gap: 0.5rem;
 }
 
-footer > .icons a {
+footer > .container > .icons a {
     color: var(--brown-2);
 }
 
-footer > .icons a:hover {
-    color: var(--brown-3);
+footer > .container > .icons a:hover {
+    color: var(--brown-1);
 }
 
 .brown, .brown-1 {
